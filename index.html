@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>K</span>evin.</h2>
+
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <span class="close-menu" onclick="closemenu()">&#215;</span>
+                </ul>
+
+                <span class="menu-icon" onclick="openmenu()">&#9776;</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero">
+
+                <div class="hero-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <span>Kevin</span></h1>
+                    <h2>Jen From Australia</h2>
+                </div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900"
+                    alt="Profile Picture"
+                    class="hero-image"
+                >
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-row">
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700"
+                        alt="About Me"
+                    >
+                </div>
+
+                <div class="about-content">
+
+                    <h1>About Me</h1>
+
+                    <p>
+                        Hello! I'm Kevin, a creative designer and developer
+                        who enjoys building clean, modern and user-friendly
+                        digital experiences. I love learning new technologies
+                        and turning ideas into useful products.
+                    </p>
+
+                    <div class="tab-buttons">
+                        <button class="tab-button active"
+                            onclick="openTab('skills', this)">
+                            Skills
+                        </button>
+
+                        <button class="tab-button"
+                            onclick="openTab('experience', this)">
+                            Experience
+                        </button>
+
+                        <button class="tab-button"
+                            onclick="openTab('education', this)">
+                            Education
+                        </button>
+                    </div>
+
+                    <div id="skills" class="tab-content">
+                        <p><span>UI/UX</span><br>Designing Web/App interfaces</p>
+                        <p><span>Web Development</span><br>Web app development</p>
+                        <p><span>App Development</span><br>Building Android/iOS apps</p>
+                    </div>
+
+                    <div id="experience" class="tab-content hidden">
+                        <p><span>2025 - Present</span><br>Freelance Web Designer</p>
+                        <p><span>2024 - 2025</span><br>Junior Front-End Developer</p>
+                    </div>
+
+                    <div id="education" class="tab-content hidden">
+                        <p><span>2022 - 2025</span><br>Bachelor's Degree</p>
+                        <p><span>2020 - 2022</span><br>Higher Secondary Education</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+
+            <h1 class="section-title">My Services</h1>
+
+            <div class="services-list">
+
+                <div class="service-card">
+                    <h2>&lt;/&gt;</h2>
+                    <h3>Web Design</h3>
+                    <p>
+                        I create attractive, responsive and easy-to-use
+                        websites for personal and business needs.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div class="service-card">
+                    <h2>▣</h2>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        I design simple and engaging user experiences
+                        with clear layouts and smooth navigation.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div class="service-card">
+                    <h2>◎</h2>
+                    <h3>App Design</h3>
+                    <p>
+                        I create modern mobile app designs that make
+                        everyday tasks easier for users.
+                    </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+
+            <h1 class="section-title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?w=700"
+                        alt="Social Media App"
+                    >
+
+                    <div class="work-info">
+                        <h3>Social Media App</h3>
+                        <p>A simple mobile app with a clean interface.</p>
+                        <a href="#contact">↗</a>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700"
+                        alt="Music App"
+                    >
+
+                    <div class="work-info">
+                        <h3>Music App Design</h3>
+                        <p>A modern mobile music application design.</p>
+                        <a href="#contact">↗</a>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?w=700"
+                        alt="Shopping App"
+                    >
+
+                    <div class="work-info">
+                        <h3>Online Shopping App</h3>
+                        <p>An online shopping application concept.</p>
+                        <a href="#contact">↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="see-more" onclick="location.href='#contact'">
+                See more
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+
+            <div class="contact-row">
+
+                <div class="contact-left">
+                    <h1 class="section-title">Contact Me</h1>
+
+                    <p>➤ contact@example.com</p>
+                    <p>☎ 0123456789</p>
+
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">𝕏</a>
+                        <a href="#">◎</a>
+                        <a href="#">in</a>
+                    </div>
+
+                    <a href="cv.pdf" download class="download-btn">
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="contact-right">
+                    <form id="contactForm">
+
+                        <input type="text"
+                            placeholder="Your Name" required>
+
+                        <input type="email"
+                            placeholder="Your Email" required>
+
+                        <textarea rows="6"
+                            placeholder="Your Message" required></textarea>
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 Kevin. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+
+        // Open Mobile Menu
+        function openmenu() {
+            document.getElementById("sidemenu").classList.add("active");
+        }
+
+        // Close Mobile Menu
+        function closemenu() {
+            document.getElementById("sidemenu").classList.remove("active");
+        }
+
+        // Close menu after clicking a navigation link
+        document.querySelectorAll("#sidemenu a").forEach(link => {
+            link.addEventListener("click", closemenu);
+        });
+
+        // About Section Tabs
+        function openTab(tabName, button) {
+
+            let contents = document.querySelectorAll(".tab-content");
+            let buttons = document.querySelectorAll(".tab-button");
+
+            contents.forEach(content => {
+                content.classList.add("hidden");
+            });
+
+            buttons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            document.getElementById(tabName).classList.remove("hidden");
+            button.classList.add("active");
+        }
+
+        // Contact Form
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you! Your message has been entered.");
+            this.reset();
+        });
+
+    </script>
+
+</body>
+</html>
